@@ -13,7 +13,20 @@
 		8C9C540D247DE775006DF598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C540B247DE775006DF598 /* Main.storyboard */; };
 		8C9C540F247DE781006DF598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C540E247DE781006DF598 /* Assets.xcassets */; };
 		8C9C5412247DE781006DF598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C5410247DE781006DF598 /* LaunchScreen.storyboard */; };
+		8C9C5422247DE9AF006DF598 /* BankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C5421247DE9AF006DF598 /* BankAppTests.swift */; };
+		8C9C542B247DEA47006DF598 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C542A247DEA47006DF598 /* Account.swift */; };
+		8C9C542C247DEAAD006DF598 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C542A247DEA47006DF598 /* Account.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C9C5424247DE9AF006DF598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C9C53FA247DE775006DF598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C9C5401247DE775006DF598;
+			remoteInfo = BankApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8C9C5402247DE775006DF598 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		8C9C540E247DE781006DF598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9C5411247DE781006DF598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C9C5413247DE781006DF598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9C541F247DE9AF006DF598 /* BankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9C5421247DE9AF006DF598 /* BankAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppTests.swift; sourceTree = "<group>"; };
+		8C9C5423247DE9AF006DF598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9C542A247DEA47006DF598 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8C9C53FF247DE775006DF598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9C541C247DE9AF006DF598 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9C5404247DE775006DF598 /* BankApp */,
+				8C9C5420247DE9AF006DF598 /* BankAppTests */,
 				8C9C5403247DE775006DF598 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9C5402247DE775006DF598 /* BankApp.app */,
+				8C9C541F247DE9AF006DF598 /* BankAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +82,7 @@
 		8C9C5404247DE775006DF598 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
+				8C9C5429247DE9F2006DF598 /* Models */,
 				8C9C5405247DE775006DF598 /* AppDelegate.swift */,
 				8C9C5407247DE775006DF598 /* SceneDelegate.swift */,
 				8C9C5409247DE775006DF598 /* ViewController.swift */,
@@ -65,6 +92,23 @@
 				8C9C5413247DE781006DF598 /* Info.plist */,
 			);
 			path = BankApp;
+			sourceTree = "<group>";
+		};
+		8C9C5420247DE9AF006DF598 /* BankAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C5421247DE9AF006DF598 /* BankAppTests.swift */,
+				8C9C5423247DE9AF006DF598 /* Info.plist */,
+			);
+			path = BankAppTests;
+			sourceTree = "<group>";
+		};
+		8C9C5429247DE9F2006DF598 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C542A247DEA47006DF598 /* Account.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +131,24 @@
 			productReference = 8C9C5402247DE775006DF598 /* BankApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8C9C541E247DE9AF006DF598 /* BankAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9C5426247DE9AF006DF598 /* Build configuration list for PBXNativeTarget "BankAppTests" */;
+			buildPhases = (
+				8C9C541B247DE9AF006DF598 /* Sources */,
+				8C9C541C247DE9AF006DF598 /* Frameworks */,
+				8C9C541D247DE9AF006DF598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C9C5425247DE9AF006DF598 /* PBXTargetDependency */,
+			);
+			name = BankAppTests;
+			productName = BankAppTests;
+			productReference = 8C9C541F247DE9AF006DF598 /* BankAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +161,10 @@
 				TargetAttributes = {
 					8C9C5401247DE775006DF598 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					8C9C541E247DE9AF006DF598 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8C9C5401247DE775006DF598;
 					};
 				};
 			};
@@ -116,6 +182,7 @@
 			projectRoot = "";
 			targets = (
 				8C9C5401247DE775006DF598 /* BankApp */,
+				8C9C541E247DE9AF006DF598 /* BankAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +198,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C9C541D247DE9AF006DF598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +213,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C9C540A247DE775006DF598 /* ViewController.swift in Sources */,
+				8C9C542B247DEA47006DF598 /* Account.swift in Sources */,
 				8C9C5406247DE775006DF598 /* AppDelegate.swift in Sources */,
 				8C9C5408247DE775006DF598 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C9C541B247DE9AF006DF598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9C5422247DE9AF006DF598 /* BankAppTests.swift in Sources */,
+				8C9C542C247DEAAD006DF598 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C9C5425247DE9AF006DF598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C9C5401247DE775006DF598 /* BankApp */;
+			targetProxy = 8C9C5424247DE9AF006DF598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8C9C540B247DE775006DF598 /* Main.storyboard */ = {
@@ -316,6 +408,46 @@
 			};
 			name = Release;
 		};
+		8C9C5427247DE9AF006DF598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y4EZCE9LM;
+				INFOPLIST_FILE = BankAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardohui.BankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankApp.app/BankApp";
+			};
+			name = Debug;
+		};
+		8C9C5428247DE9AF006DF598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y4EZCE9LM;
+				INFOPLIST_FILE = BankAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardohui.BankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankApp.app/BankApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +465,15 @@
 			buildConfigurations = (
 				8C9C5417247DE781006DF598 /* Debug */,
 				8C9C5418247DE781006DF598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9C5426247DE9AF006DF598 /* Build configuration list for PBXNativeTarget "BankAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9C5427247DE9AF006DF598 /* Debug */,
+				8C9C5428247DE9AF006DF598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
